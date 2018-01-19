@@ -1,30 +1,17 @@
-<div id="header" class="uk-navbar-container tm-navbar-container" uk-sticky>
-    <div class="uk-container uk-background-default uk-container-expand">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-                <a href="{{ "/" | absolute_url |}}" class="uk-navbar-item uk-logo">
-                    <img src='{{ "/assets/img/exp_small.png" | absolute_url }}' alt="eXpansion" style="height: 50%">
-                </a>
-            </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav uk-visible@m">
-                    <li><a href="/">
-                        <span uk-icon="icon: home"></span> Home
-                    </a></li>
-                    <li><a href="/docs.html">
-                        <span uk-icon="icon: lifesaver"></span>Documentation
-                    </a></li>
-                    <li><a href="/changelog.html">
-                        <span uk-icon="icon: history"></span> Changelog
-                    </a></li>
-                </ul>
-                <div class="uk-navbar-item uk-visible@m">
-                    <a href="/download" class="uk-button uk-button-primary tm-button-default uk-icon">
-                        <span uk-icon="icon : cloud-download"></span>
-                        Download
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </div>
+<ul class="uk-navbar-nav">
+    <li><a href="/">
+        <span uk-icon="icon: home"></span>&nbsp;Home
+    </a></li>
+    <li><a href="/docs.html">
+        <span uk-icon="icon: lifesaver"></span>&nbsp;Documentation
+    </a></li>
+    <li><a href="/changelog.html">
+        <span uk-icon="icon: history"></span>&nbsp;Changelog
+    </a></li>
+</ul>
+<div class="uk-navbar-item">
+    <a href="/download" class="uk-button uk-button-primary tm-button-default uk-icon">
+        <span uk-icon="icon: cloud-download"></span>&nbsp;
+        Download
+    </a>
 </div>

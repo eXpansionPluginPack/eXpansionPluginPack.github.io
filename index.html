@@ -1,47 +1,48 @@
 ---
 layout: home
 ---
-<h1 class="uk-heading-divider"><span>Welcome to eXpansion<sup>2</sup></span></h1>
 
-<blockquote cite="#">
-    <p class="uk-margin-small-bottom">Dedicated Server Controller for ManiaPlanet games by Ubisoft/NADEO!</p>
-</blockquote>
+<p class="uk-margin-small-bottom">Dedicated Server Controller for ManiaPlanet games by Ubisoft/NADEO!</p>
 
 <p>
-    eXpansion<sup>2</sup> is based on <a href="http://symfony.com">Symfony</a> components which allows a very modular structure.<br/>
-    Manialink generation is powered by steeffeen's <a href="https://github.com/steeffeen/FancyManiaLinks">Fancy Manialink's</a> library, and we use some custom parts to inject maniascrips.
+    eXpansion<sup>2</sup> is based on <a href="http://symfony.com">Symfony</a> components which allows a very modular
+    structure.<br/>
+    Manialink generation is powered by steeffeen's <a href="https://github.com/steeffeen/FancyManiaLinks">Fancy
+    Manialink's</a> library, and we use some custom parts to inject maniascrips.
 </p>
 
-<h2 class="uk-heading-line"><span>Top Features</span></h2>
+<h2 class="uk-heading-line uk-text-center"><span>Top Features</span></h2>
 
 <div class="uk-grid-match uk-child-width-expand@s" uk-grid>
 
     {% for feature in site.data.top_features %}
-    <div class="uk-width-1-2@l uk-width-1-1@m">
-        <div class="uk-card uk-card-default uk-card-body uk-card-hover">                                               
-					<h3 class="uk-text-center">
-					<span uk-icon="icon: {{ feature.icon }}; ratio: 2"></span>
-					<br/>{{ feature.title }}</h3>
-					<hr />
-                    <p class="uk-text-justify uk-text-break">			
-					{{ feature.description }}                        					
-                    </p>							
-					{% if feature.description_more != nil %}					
-					<h1 class="uk-heading-line uk-text-right"><span>
-                        <a class="uk-button uk-button-default uk-float-right " uk-toggle="target: #show-more__{{ forloop.index0 }}; cls: uk-hidden">
+    <div class="uk-width-1-4@l uk-width-1-2@m uk-width-1-1@s">
+        <div class="uk-card uk-card-small">
+            <h3 class="uk-text-center">
+                <span uk-icon="icon: {{ feature.icon }}; ratio: 2"></span>
+                <br/>{{ feature.title }}</h3>
+            <hr/>
+            <p class="uk-text-justify uk-text-break">
+                {{ feature.description }}
+            </p>
+            {% if feature.description_more != nil %}
+            <h1 class="uk-heading-line uk-text-right"><span>
+                        <a class="uk-button uk-button-default uk-float-right "
+                           uk-toggle="target: #show-more__{{ forloop.index0 }}; cls: uk-hidden">
                             <span uk-icon="icon: expand"></span>
                             More
                         </a>
 						</span>
-						</h1>
-						{% else %}
-						<hr/>
-                        {% endif %}
-                    {% if feature.description_more != nil %}			
-                    <p id="show-more__{{ forloop.index0 }}" class="uk-hidden uk-text-justify uk-text-break uk-margin-medium-top">					              
-						{{ feature.description_more }}
-                    </p>
-                    {% endif %}              
+            </h1>
+            {% else %}
+            <hr/>
+            {% endif %}
+            {% if feature.description_more != nil %}
+            <p id="show-more__{{ forloop.index0 }}"
+               class="uk-hidden uk-text-justify uk-text-break uk-margin-medium-top">
+                {{ feature.description_more }}
+            </p>
+            {% endif %}
         </div>
     </div>
     {% endfor %}

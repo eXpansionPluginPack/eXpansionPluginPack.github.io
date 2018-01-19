@@ -1,14 +1,12 @@
-- title:  Great Code - with Symfony principles
+- title:  Great Code
   icon: code
   description: The experience you get coding for eXpansion, can serve you every where else and even on your CV.
-  description_more:
     If you have used Symfony before, you'll have no troubles writing additions for eXpansion.
     And what you learn by writing eXpansion additions, you can apply for Symphony websites!
 
 - title: Light & Fast
   icon: bolt
   description: Use of ManiaScript allows to delegate tasks and take the load off from the server.
-  description_more:
     eXpansion2 sends a single manialink to update all widgets data; maniascript handles player related data.
     Manialinks are send grouped to create as little load as possible for the dedicated server.
 
@@ -22,8 +20,7 @@
 
 - title: Compatible
   icon: git-fork
-  description: Trackmania or Shootmania - eXpansion is built to work on any environment & gamemode.  
-  description_more:
+  description: Trackmania or Shootmania - eXpansion is built to work on any environment & gamemode.
     With the unique data provider-based architecture coupled with Symphony DI makes adapting existing plugins to new gamemodes easier than before!
     It is possible to re-use (for example) widgets by just writing a new data provider supporting new game mode.
 

@@ -104,4 +104,4 @@ oneup_flysystem:
             adapter: dedicated_user_data
 ```
 
-See the [OnupFlysystem Documentation](https://github.com/1up-lab/OneupFlysystemBundle/blob/master/Resources/doc/index.md) for more use cases! 
+See the [OneupFlysystem Documentation](https://github.com/1up-lab/OneupFlysystemBundle/blob/master/Resources/doc/index.md) for more use cases! 

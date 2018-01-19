@@ -4,14 +4,27 @@
     {% include header.html %}
 </head>
 <body>
-{% include main_menu.html %}
+<div id="header" class="uk-navbar-container tm-navbar-container">
+    <div class="uk-container uk-background-primary uk-container-expand">
+        <nav class="uk-navbar-container uk-light uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href='{{ "/" | absolute_url }}' class="uk-navbar-item">
+                    <img src='{{ "/assets/img/explogo.png" | absolute_url }}' alt="eXpansion" style="height: 75%">
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                {% include main_menu.html %}
+            </div>
+        </nav>
+    </div>
+</div>
 
 
 <main id="content" role="main" class="uk-margin-no-top">
 
         <div class="uk-container uk-container-expand">
             <div class="uk-grid" uk-grid>
-                <div class="uk-width-1-5@s uk-background-primary uk-light smallpadding">
+                <div class="uk-width-1-5@s uk-background-muted uk-dark smallpadding">
                     {% include docs_admin_menu.html %}
                 </div>
 
