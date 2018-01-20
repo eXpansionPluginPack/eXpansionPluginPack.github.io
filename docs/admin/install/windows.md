@@ -66,7 +66,7 @@ This will install/update eXpansion and all it's dependencies.
 
 ## Update eXpansion
 
-> Alpha1 has an issue and the update.bat is missing in bin, but you fix this by copying it from exp directory.
+> Alpha1 has an issue and the update.bat is missing in bin!
 
 Double click on the `update.bat` file in the `bin` directory. 
 
