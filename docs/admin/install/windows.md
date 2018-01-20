@@ -14,6 +14,27 @@ Which we need.
 
 1. Download 32-bit wamp from: [http://www.wampserver.com/](http://www.wampserver.com/)
 2. Execute the installer 
+3. Change php version to 7.1.9 at wamp-menu
+4. Edit `c:\wamp\bin\php\php7.1.9\php.ini` and search for `dotnet`
+
+remove the `;` before line `;extension=php_com_dotnet.dll`
+example:
+
+```ini
+extension=php_com_dotnet.dll
+```
+
+then search for `[COM]`
+and remove `;` from `;com.allow_dcom = true`
+example:
+
+```ini
+; allow Distributed-COM calls
+; http://php.net/com.allow-dcom
+com.allow_dcom = true
+```
+
+save file.
 
 ### Know issues 
 
