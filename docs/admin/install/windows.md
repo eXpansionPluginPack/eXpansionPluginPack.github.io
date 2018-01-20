@@ -12,8 +12,8 @@ We will start by installing wamp, this will basically install
 
 Which we need. 
 
-1. Download wamp from: [http://www.wampserver.com/](http://www.wampserver.com/)
-1. Execute the installer 
+1. Download 32-bit wamp from: [http://www.wampserver.com/](http://www.wampserver.com/)
+2. Execute the installer 
 
 ### Know issues 
 
@@ -36,8 +36,9 @@ Which we need.
     ...
     ...   
 ```
+In case you installed 64bit version of wamp, you'll get following error, this can be fixed.
+Uninstall 64-bit version and installi 32-bit version shoud fix, othervice check that the following extension is installed at your php.ini:
 
-Add following line to your php.ini to section, where other extensions are:
 > php.ini 
 
 ```ini
