@@ -28,4 +28,8 @@ Expansion Requires the following php extensions :
 * **intl**
 * **pdo**
 
+For Windows you'll need additionally:
+
+* **php_com_dotnet**
+
 And the pdo extension for the database you are using.
