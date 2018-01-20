@@ -38,8 +38,3 @@ Usage:
 
 ```
 
-Next you need to install composer dependencies:
-
-```bash
-$ composer update
-``` 

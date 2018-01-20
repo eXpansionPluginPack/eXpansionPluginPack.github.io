@@ -7,7 +7,7 @@ $ sudo apt-get install -y php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7
 
 Some distributions may also need:
 ```bash
-$ sudo apt-get install -y  php7.0-pdo_mysql
+$ sudo apt-get install -y php7.0-pdo_mysql
 ```
 
 We can now edit the php.ini file, open with your favorite editor `/etc/php/7.0/cli/php.ini` and change the memory limit
