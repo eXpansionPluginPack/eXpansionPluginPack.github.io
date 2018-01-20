@@ -1,3 +1,23 @@
+- title: V2.0.0.0-alpha1 Two Rivers
+  description:
+    Its finally here, alpha!
+  date: 15/10/2017
+  changes: 
+    - name : Something completely new
+      type: created
+
+- title: V1.1.0.1
+  description:
+    Version patched for MP#4. 
+  date: 15/10/2017
+  changes: 
+    - name : Forced widgets positions so that user can't edit them.there is a widgets.ini file to edit with the content...
+      type: fix
+    - name : Fixed dedimania not working
+      type: fix
+    - name : Disabled many features that either crashed the game or expansion
+      type: fix
+
 - title: V1.1.0.0
   description:
     Version patched for MP#4. Last version of eXpansion V1. This version works but has numerous bugs, even some that might crash the game.<br/>
