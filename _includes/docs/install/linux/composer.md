@@ -37,3 +37,9 @@ Usage:
  command [options] [arguments]
 
 ```
+
+Next you need to install composer dependencies:
+
+```bash
+$ composer update
+``` 
