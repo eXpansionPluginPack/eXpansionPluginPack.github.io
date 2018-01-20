@@ -24,6 +24,26 @@ Which we need.
 1. Restart computer
 1. Reinstall wamp.
 
+#### Class 'COM' not found
+
+```yaml
+[
+  "error" => Error {
+    #message: "Class 'COM' not found",
+    #code: 0,
+    #file: "C:\dedicated\exp2\vendor\oliverde8\asynchronous-jobs\src\AsynchronousJobs\JobRunner.php",
+    #line: 78,
+    ...
+    ...   
+```
+
+Add following line to your php.ini to section, where other extensions are:
+> php.ini 
+
+```ini
+extension=php_com_dotnet.dll
+```
+
 ## Install composer
 
 1. Download installer from : [https://github.com/johnstevenson/composer-setup/releases/latest](https://github.com/johnstevenson/composer-setup/releases/latest)

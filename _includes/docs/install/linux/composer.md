@@ -21,7 +21,7 @@ Now test your installation by running:
 $ composer
 ```
 
-Which should output : 
+Which should output: 
 ```
    ______
   / ____/___  ____ ___  ____  ____  ________  _____

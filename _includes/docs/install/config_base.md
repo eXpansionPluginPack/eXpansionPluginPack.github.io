@@ -48,7 +48,7 @@ it's own schema |
 
 
 * **dedicated_host** : Host or ip to connect to the dedicated.
-If you are using wamp/xampp it's probably `localhost or `127.0.0.1`
+If you are using wamp/xampp it's probably `localhost` or `127.0.0.1`
 
 * **dedicated_port** : The xmlrpc port configured in the dedicated config file
 
@@ -64,9 +64,11 @@ See section below if you configured it as **remote**.
 
 **!! eXpansion will allow in the future admins to be added ingame. But for now you will need to handle it in the `expansion.yml` file.**
 
-> /app/config/expansion.yml
+In this file replace `login1` by your own login. You may add as many logins as you wish on multiple lines. 
 
-In this file replace `login1` by your own login. You may add as many logins as you wish on multiple lines. Exempme : 
+Example: 
+
+> /app/config/expansion.yml
 
 ```yml
 e_xpansion_admin_groups:
@@ -74,8 +76,8 @@ e_xpansion_admin_groups:
         master_admin:
             label: Master Admin
             logins:
-                - oliverde8
-                - reaby
+                - login1
+                - login2
             permissions: [] # Master_admin has always all permissions.
         admin:
             label: Admin
