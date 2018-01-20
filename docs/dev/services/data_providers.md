@@ -228,7 +228,7 @@ that you will probably won't need. You can always contact us if you wish to know
 | mp.legacy.manialink       | ListenerInterfaceMpLegacyManialink | *.PlayerManialinkPageAnswer | onPlayerManialinkPageAnswer |
 | mp.legacy.script          | ListenerInterfaceMpLegacyScript | *.ModeScriptCallbackArray | onModeScriptCallbackArray |
 
- ### Maniaplanet Script Callbacks
+### Maniaplanet Script Callbacks
  
  | Dataprovider              | Interface Class  | Dedicated Callback | Callbacks Methods |
  | --- | --- |--- |--- |
@@ -250,9 +250,13 @@ that you will probably won't need. You can always contact us if you wish to know
 
 ### SM Data Providers
 
-@todo 
-Generate list here
-
+ | Dataprovider              | Interface Class  | Dedicated Callback | Callbacks Methods |
+ | --- | --- |--- |--- |
+ |sm.player             | ListenerInterfaceSmPlayer | Shootmania.Event.OnHit<br> Shootmania.Event.OnArmorEmpty<br>Shootmania.Event.OnCapture<br>Shootmania.Event.OnPlayerTriggersSector<br>Shootmania.Event.OnPlayerTouchesObject<br>Shootmania.Event.OnPlayerThrowsObject|  |
+ |sm.player.shoot       | ListenerInterfaceSmPlayerShoot | Shootmania.Event.OnShoot | onShoot | 
+ |sm.player.extra       | ListenerInterfaceSmPlayerExtra | Shootmania.Event.OnNearMiss<br>Shootmania.Event.OnShotDeny<br>Shootmania.Event.OnFallDamage<br>Shootmania.Event.OnPlayerRequestRespawn|  |
+ |sm.player.actions     | ListenerInterfaceSmPlayerActions | Shootmania.Event.OnActionCustomEvent<br>Shootmania.Event.OnActionEvent<br>Shootmania.Event.OnPlayerRequestActionChange | |
+ 
 ### Compatibility Providers
 
 These data providers contains no logic in them, they exist just to limit a plugin to a certain gamemode & title.
