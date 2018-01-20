@@ -27,10 +27,6 @@ sudo apt update
 
 {% include docs/install/linux/composer.md %}
 
-## Update eXpansion and install composer dependencies
-
-{% include docs/install/update_base.md %}
-
 ## Configure eXpansion
 
 {% include docs/install/config_base.md %}
@@ -41,3 +37,6 @@ For more information check : [Configure eXpansion](../../config/configuration.ht
 
 {% include docs/install/linux/start_base.md %}
 
+## Optionally Update eXpansion
+
+{% include docs/install/update_base.md %}

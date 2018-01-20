@@ -14,7 +14,7 @@ This way it's possible to route and re-organize events and even adapt the contro
  1. different scripted game modes  
  2. possible future game api changes
    
-![Diagramme explaining Data Providers]({{ "/assets/img/doc/DataProviders.jpg" | absolute_url }})
+![Diagram explaining Data Providers]({{ "/assets/img/doc/DataProviders.jpg" | absolute_url }})
 
 The diagram shows how event data flows from dedicated to plugin.
 
@@ -259,5 +259,5 @@ that you will probably won't need. You can always contact us if you wish to know
  
 ### Compatibility Providers
 
-These data providers contains no logic in them, they exist just to limit a plugin to a certain gamemode & title.
+These data providers contains no logic in them, they exist just to limit a plugin to a certain game mode & title.
 
