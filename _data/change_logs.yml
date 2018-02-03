@@ -3,19 +3,19 @@
     Its finally here, alpha!
   date: 02/03/2018
   changes: 
-    - name : run.bat & run.sh contained errors : Cache was not cleared at proper place, and required parameters to be correct & Database build commands were not executed in prod mode
+    - name : "run.bat & run.sh contained errors : Cache was not cleared at proper place, and required parameters to be correct & Database build commands were not executed in prod mode"
       type: fix
-    - name: Fixed default parameters.yml.dist
+    - name: "Fixed default parameters.yml.dist"
       type: fix
-    - name: Fixed issue 230 : Impossible to unmute player from interface
+    - name: "Fixed issue 230 : Impossible to unmute player from interface"
       type: fix
-    - name: Fixed issue 224 : Update.bat file didn't work and was not available in releases.
+    - name: "Fixed issue 224 : Update.bat file didn't work and was not available in releases."
       type: fix
-    - name: Fixed issue 235 : Removed error message at vote manager, when a plugin is not bind for native vote equivalent.
+    - name: "Fixed issue 235 : Removed error message at vote manager, when a plugin is not bind for native vote equivalent."
       type: fix
-    - Fixed issue when shuffling maps if there are more then 250 maps.
+    - name: "Fixed issue when shuffling maps if there are more then 250 maps."
       type: fix
-    - Fixed issue 243 : If custom script mode doesen't have method setApiVersion eXpansion crashes.
+    - name: "Fixed issue 243 : If custom script mode doesen't have method setApiVersion eXpansion crashes."
       type: fix
       
 - title: V2.0.0.0-alpha1 Two Rivers
