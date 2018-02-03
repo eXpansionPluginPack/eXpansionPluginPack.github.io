@@ -1,7 +1,7 @@
 - title: V2.0.0.0-alpha2 Two Rivers
   description:
     Its finally here, alpha!
-  date: 15/10/2017
+  date: 02/03/2018
   changes: 
     - name : run.bat & run.sh contained errors : Cache was not cleared at proper place, and required parameters to be correct & Database build commands were not executed in prod mode
       type: fix
@@ -21,7 +21,7 @@
 - title: V2.0.0.0-alpha1 Two Rivers
   description:
     Its finally here, alpha!
-  date: 15/10/2017
+  date: 20/01/2018
   changes: 
     - name : Something completely new
       type: created
