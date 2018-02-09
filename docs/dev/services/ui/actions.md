@@ -3,16 +3,30 @@ layout: dev
 ---
 
 ## Manialink actions
-Adding functionality for buttons and other ui elements.
+
+Allows adding functionality for buttons and other ui elements.
  
-So, to make things easy actionFactory is already set in place for ui classes, for Windows and for Widgets.
+* **Autowire : TRUE** This service can be autowired into your services. 
+* **Class :** eXpansion\Framework\Core\Plugins\Gui\ActionFactory
 
-Here's how to use for button, but you can use the same technique to any element which supports: $element->setAction();
+By default this service is already available in Window & Widget Factories. So you won't need to inject it. 
 
-These functions describes as:
+### Signature
 
-CreateAction(ManialinkInterface $manialink, Callable $callback, array $params);
-DestroyAction(string $action);
+The signature of the method allowing the creation of a action is as fallow : 
+```php
+<?php 
+function createManialinkAction(ManialinkInterface $manialink, $callable, $args, $permanent = false);
+```
+
+* **$manialink :** The manialink for which the action is being generated for.
+* **$callable :** The function to class in a certain object. _See php callable doc_
+* **$args :** Arguments you wish to get back in the callback function. 
+* **$permanent :** By default actions on a manialinks are deleted when the manialink is updated. When an action is parmenent it won't be deleted as long as the manialink is used. Basically if you create an action in the `create` method of the manialink factory you should use `permanent : true`, if not `false`. This way on each update the actions unused will be deleted.
+
+### Exemple 
+
+Let's see how to use it for a button, you can use the same technique with any element that supports the `setAction` method. 
 
 ```php
 <?php
@@ -25,19 +39,20 @@ $helloButton = $this->uiFactory->createButton("myBundle.gui.button.hello", uiBut
 ```
  
 You usually don't need to unset actions, as they are cleared automatically on window close.
-but you can do so, if you need to set temporarily actions at your update calls.
 
+If need to delete an action you can do so with the fallowing method :
 ```php
 <?php
 $this->actionFactory->destroyAction($myAction);
 ```
 
 The callback function is always structured like this:
-$login is login of the player who clicked the action,
-$entries is array of input elements, usually we use these to send data back from checkboxes, dropdown menus and 
+* **$login :** The login of the player who clicked the action,
+* **$entries : ** An array of input elements, usually we use these to send data back from checkboxes, dropdown menus and 
 textboxes and text inputs.
-$args is the args you can set freely at createManialinkAction, it's the last entry, normally an array.
+* **$args : ** The args you can set freely at createManialinkAction.
 
+**Exemple :**
 ```php
 <?php
     public function callbackSayHello(ManialinkInterface $manialink, $login, $entries, $args) {
