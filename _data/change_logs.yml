@@ -1,7 +1,24 @@
+
+- title: V2.0.0.0-alpha3 Two Rivers
+  description:
+    Fixes & analytics
+  date: 24/02/2018
+  changes:
+      - name: "Fixed issue #248 : Strange behaviour of translated uiButtons."
+        type: fix
+      - name: "Fixed issue #255 : Fixed issue when asking permissions on guest admin groups crashing controller"
+        type: fix
+      - name: "Fixed issue #269 : eXpansion crashing with unknow player exception."
+        type: fix
+      - name: "Feature #262 : Added support to ping eXpansion Analytics."
+        type: created
+      - name: "Feature #266 : Add warning that displayes every 5 minutes about dev mode."
+        type: created
+        
 - title: V2.0.0.0-alpha2 Two Rivers
   description:
     Its finally here, alpha!
-  date: 02/03/2018
+  date: 02/02/2018
   changes: 
     - name : "run.bat & run.sh contained errors : Cache was not cleared at proper place, and required parameters to be correct & Database build commands were not executed in prod mode"
       type: fix
