@@ -210,11 +210,16 @@ that you will probably won't need. You can always contact us if you wish to know
 
 ### Generic Providers
 
+`exp.tm`, `exp.sm` and `exp.all` are generic empty providers, which enables the plugin to work on certain environments.
+
 | Dataprovider              | Interface Class  | Dedicated Callback | Callbacks Methods |
-| ------------------------- | -----------      | ---------------    | ------  | 
+| ------------------------- | ---------------- | ------------------ | ----------------  | 
 | exp.application           | ListenerInterfaceExpApplication |  |onApplicationInit<br> onApplicationReady<br> onApplicationStop|
 | exp.timer                 | ListenerInterfaceExpTimer | | onEverySecond<br> onPreloop<br> onPostloop |
 | expansion.user_group      | ListenerInterfaceExpUserGroup | |  onExpansionGroupAddUser<br> onExpansionGroupRemoveUser<br> onExpansionGroupDestroy| 
+| exp.tm                    | StatusAwarePluginInterface | | setStatus | 
+| exp.sm                    | StatusAwarePluginInterface | | setStatus | 
+| exp.all                   | StatusAwarePluginInterface | | setStatus | 
 
 
 ### Maniaplanet Legacy Callbacks

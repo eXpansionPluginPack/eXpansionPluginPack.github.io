@@ -24,7 +24,7 @@ function createManialinkAction(ManialinkInterface $manialink, $callable, $args, 
 * **$args :** Arguments you wish to get back in the callback function. 
 * **$permanent :** By default actions on a manialinks are deleted when the manialink is updated. When an action is parmenent it won't be deleted as long as the manialink is used. Basically if you create an action in the `create` method of the manialink factory you should use `permanent : true`, if not `false`. This way on each update the actions unused will be deleted.
 
-### Exemple 
+### Example 
 
 Let's see how to use it for a button, you can use the same technique with any element that supports the `setAction` method. 
 
@@ -40,13 +40,14 @@ $helloButton = $this->uiFactory->createButton("myBundle.gui.button.hello", uiBut
  
 You usually don't need to unset actions, as they are cleared automatically on window close.
 
-If need to delete an action you can do so with the fallowing method :
+If need to delete an action you can do so with the following method :
 ```php
 <?php
 $this->actionFactory->destroyAction($myAction);
 ```
 
 The callback function is always structured like this:
+* **$manialink*: Manialink the action was called.
 * **$login :** The login of the player who clicked the action,
 * **$entries : ** An array of input elements, usually we use these to send data back from checkboxes, dropdown menus and 
 textboxes and text inputs.
@@ -60,7 +61,8 @@ textboxes and text inputs.
     }
 ```
 
-here the $manialink is provided for closing the window, or updating the contents with ease:
+$manialink is provided for closing the window, or updating the contents with ease:
+
 ```php
 <?php
  $this->update($manialink->getUserGroup());

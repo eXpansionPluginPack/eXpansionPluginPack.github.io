@@ -127,7 +127,7 @@ $this->mlfactory->destroy($userGroup);
 
 ### Sharing between Update & Create functions
 
-You migh need to access some element created in the create function in the update function . 
+You might need to access some element created in the create function in the update function . 
 In this case **you must not store manialink specific data on your factory!!**
 
 ```php
@@ -148,7 +148,7 @@ $manialink->getData('my_variable');
 This way you are sure that when the manialink is destroyed so are those variables. And diminish the possibility of 
 creating a memory leak.
 
-## Complete Exemple
+## Complete Example
 
 ### The plugin
 
@@ -223,7 +223,7 @@ class Menu implements StatusAwarePluginInterface, MatchDataListenerInterface
 
 ### The Gui Factory
 
-#### The service decleration
+#### The service declaration
 
 ```yaml
     eXpansion\Bundle\Menu\Plugins\Gui\MenuFactory:

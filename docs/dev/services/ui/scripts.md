@@ -37,14 +37,25 @@ EOL
      $manialink->getFmlManialink()->getScript()->addCustomScriptLabel(ScriptLabel::Loop,
      <<<EOL
      // your maniascript goes here
-     foreach (event in PendingEvents) {
-        if (event.ControlId == "toto") 
-        {
-            sayHello();
-        }               
-     }          
+     
+               
 EOL
-    );              
+    );       
+     
+     // and there's some helpers also
+     $manialink->getFmlManialink()->getScript()->addCustomScriptLabel(ScriptLabel::MouseClick,
+     <<<EOL
+     // Event is predefined in the label.
+     
+     if (Event.ControlId == "toto")  {
+         sayHello();
+     }   
+EOL
+    );       
+      
+ 
+     
+    
 }
 ```
 
