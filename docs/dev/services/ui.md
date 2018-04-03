@@ -68,6 +68,8 @@ The other arguments the factory needs are provided thanks to the autowiring abil
 If you need any other service in your class, you can extend the construct, either those are autowired 
 or need to be set manually. Refer to the symfony dependency injection docs for more information.
 
+You can also have [dynamic positioning with widgets.](ui/widget_positions.md).
+
 #### Creating the ML Window service. 
 
 Window service are nearly identical, you only need to change your extend  
