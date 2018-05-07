@@ -1,13 +1,17 @@
 eXpansion2 is a symfony application before anything else, there are therefore a lot of symfony related configurations. 
 We will ignore all this configuration and only bother about what is necessary by eXpansion.
 
-Configuration can be found in `app/config` directory. Configuration that interests us is in the `parameters.yml` and  `expansion.yml` file.
+Configuration can be found in `app/config` directory. Configuration that interests us are in the fallowing files : 
+* `parameters.yml` 
+* `expansion.yml`
+* `bundles.yml`
 
-If you have not done so already rename the `parameters.yml.dist` to `parameters.yml`. And `expansion.yml.dist` to `expansion.yml`.
+If you have not done so already rename the : 
+* `parameters.yml.dist` to `parameters.yml`. 
+* `expansion.yml.dist` to `expansion.yml`.
+* `bundles.yml.dist` to `bundles.yml`.
 
-The following part of the file interests us : 
-
-> /app/config/parameters.yml
+The following part of the `parameters.yml` file interests us at first: 
 
 ```yaml
 parameters:
@@ -85,4 +89,16 @@ e_xpansion_admin_groups:
             permissions:
               - next
               - restart
+```
+### Enabling disabling Bundles
+
+You can enable and disable a bundle in the `bundles.yml` file. 
+The `bundles.yml.dist` File contains the list of all available bundles.
+
+Lines starting with `#` are commented and therefore those bundles will not be loaded 
+
+Example : 
+
+```yaml
+#  - \eXpansion\Bundle\LocalMapRatings\LocalMapRatingsBundle
 ```
