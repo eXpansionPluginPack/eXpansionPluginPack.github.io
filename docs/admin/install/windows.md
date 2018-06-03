@@ -75,7 +75,7 @@ extension=php_com_dotnet.dll
 
 ## Download eXpansion 
 
-Download a copy of expansion from [our download page](/download.html)
+Download a copy of expansion from [our download page](https://mp-expansion.com/download.html)
 
 Extract the sources somewhere on your computer. The file path should idealy be simple without spaces or special characters.
 
