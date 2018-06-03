@@ -73,6 +73,14 @@ extension=php_com_dotnet.dll
 1. At one point you will have `chose the command line php you want to use`.
     * Chose php 7.1
 
+## Download eXpansion 
+
+Download a copy of expansion from [our download page](/download.html)
+
+Extract the sources somewhere on your computer. The file path should idealy be simple without spaces or special characters.
+
+**Exemple :** `c:/expansion` or `c:/wamp/projects/expansion`
+
 ## Configure eXpansion 
 
 {% include docs/install/config_base.md %}
