@@ -63,3 +63,27 @@ Finally when registering a AdminChatCommand you must register the permission nee
             -  ['res', 'restartmap'] # The aliases registered with this chat command.
             - '@eXpansion\Framework\AdminGroups\Helpers\AdminGroups' # The admin chat commands requires the admin groups helper, this can be autowired !!
 ```
+
+### Adding a new permission
+
+Feature added **@BETA-3**
+
+If you are adding in your bundle a new admin command it's quite probable tou will want to create your own permission. 
+in eXpansion adding a new permission that will be configurable ingame by the admin is like everthing else, you just 
+need to create a new service. 
+
+#### Exemple
+```yaml
+    .expansion.admin_groups.permission.admin:
+        class: eXpansion\Framework\AdminGroups\Model\AdminPermission
+        arguments:
+            $description: "Access to generic admin actions"
+        tags:
+            - {name: exp.permission, permission: "admin"}
+
+```
+
+We set here a description that will be displayed in the admin groups configuration window. The permission tag attribute 
+is the name of the permission.
+
+> The service name starts with a `.` its a hidden service and can't be accessed. 
