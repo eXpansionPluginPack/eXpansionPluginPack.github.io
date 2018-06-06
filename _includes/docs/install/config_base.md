@@ -66,10 +66,7 @@ See section below if you configured it as **remote**.
 
 ### Configure a MasterAdmin 
 
-**!! eXpansion will allow in the future admins to be added ingame. But for now you will need to handle it in the `expansion.yml` file.**
-
-In this file replace `login1` by your own login. You may add as many logins as you wish on multiple lines. 
-
+In this file replace `login1` by your own login. You may add as many logins as you wish on multiple lines. The admins configured here are **constant**, they can't be altered ingame. You will be able to add new admins ingame.
 Example: 
 
 > /app/config/expansion.yml

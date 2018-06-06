@@ -14,8 +14,8 @@ Which we need.
 
 1. Download 32-bit wamp from: [http://www.wampserver.com/](http://www.wampserver.com/)
 2. Execute the installer 
-3. Change php version to 7.1.9 at wamp-menu
-4. Edit `c:\wamp\bin\php\php7.1.9\php.ini` and search for `dotnet`
+3. Change php version to 7.1.* at wamp-menu. _* here is can be any number depending on the php version that came with wamp. Exemple 7.1.16_
+4. Edit `c:\wamp\bin\php\php7.1.*\php.ini` and search for `dotnet` (_as above the * can be any number such as 7.1.16_
 
 remove the `;` before line `;extension=php_com_dotnet.dll`
 example:
@@ -72,6 +72,14 @@ extension=php_com_dotnet.dll
 1. Execute the installer
 1. At one point you will have `chose the command line php you want to use`.
     * Chose php 7.1
+
+## Download eXpansion 
+
+Download a copy of expansion from [our download page](https://mp-expansion.com/download.html)
+
+Extract the sources somewhere on your computer. The file path should idealy be simple without spaces or special characters.
+
+**Exemple :** `c:/expansion` or `c:/wamp/projects/expansion`
 
 ## Configure eXpansion 
 
