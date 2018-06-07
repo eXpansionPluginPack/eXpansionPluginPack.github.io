@@ -4,6 +4,8 @@ layout: admin
 
 # Install eXpansion on Windows
 
+> While editing config files please do not use windows notepad. Download a more "generic" tool such as [https://notepad-plus-plus.org](Notepad++) to edit te files. 
+
 ## Install wamp 
 
 We will start by installing wamp, this will basically install
