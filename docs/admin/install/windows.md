@@ -4,7 +4,7 @@ layout: admin
 
 # Install eXpansion on Windows
 
-> While editing config files please do not use windows notepad. Download a more "generic" tool such as [https://notepad-plus-plus.org](Notepad++) to edit te files. 
+> While editing config files please do not use windows notepad. Download a more "generic" tool such as [Notepad++](https://notepad-plus-plus.org) to edit te files. 
 
 ## Install wamp 
 
